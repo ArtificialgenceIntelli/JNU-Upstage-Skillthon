@@ -11,14 +11,20 @@
 
 ## 목차
 
-1. [Skillthon이란?](#skillthon이란)
-2. [크레딧 지원 — $70 무료 제공](#크레딧-지원--70-무료-제공)
-3. [사전 요구사항](#사전-요구사항)
-4. [시작하는 방법](#시작하는-방법)
-5. [제출 구성](#제출-구성)
-6. [평가 기준](#평가-기준)
-7. [References](#references)
-8. [문의](#문의)
+- [JNU × Upstage Skillthon](#jnu--upstage-skillthon)
+  - [목차](#목차)
+  - [Skillthon이란?](#skillthon이란)
+  - [크레딧 지원 — $70 무료 제공](#크레딧-지원--70-무료-제공)
+    - [크레딧 받는 방법](#크레딧-받는-방법)
+  - [사전 요구사항](#사전-요구사항)
+  - [시작하는 방법](#시작하는-방법)
+    - [1단계 — Repo Fork](#1단계--repo-fork)
+    - [2단계 — Clone \& 열기](#2단계--clone--열기)
+    - [3단계 — skill-creator 설치](#3단계--skill-creator-설치)
+    - [4단계 — Skill 만들기](#4단계--skill-만들기)
+  - [제출 구성](#제출-구성)
+  - [References](#references)
+  - [문의](#문의)
 
 ---
 
@@ -35,13 +41,6 @@ Upstage 교육 (5/8)
     → Skillthon 제출 (5/11~15)
         → IITP 본선: 내 Skill이 Agent Service의 부품이 됨
 ```
-
-**좋은 Skill의 조건:**
-- 명확한 Input / Output (Agent가 언제 써야 할지 안다)
-- Upstage Solar API로 핵심 기능 구현
-- `run(input_data: dict) -> dict` 한 함수로 완결
-
----
 
 ## 크레딧 지원 — $70 무료 제공
 
@@ -118,7 +117,7 @@ Claude Code 프롬프트에 아래와 같이 입력하세요.
 **Upstage API 키 설정 등 모든 초기 설정을 skill-creator가 안내합니다.**
 
 ```
-> Skillthon용 스킬을 만들고 싶어요
+> 내 주변의 버터떡을 파는 곳을 가져오는 스킬을 만들고 싶어요
 ```
 
 skill-creator가 순서대로 안내하는 항목:
@@ -136,7 +135,7 @@ skill-creator가 순서대로 안내하는 항목:
 Fork된 repo의 `skills/` 아래에 **Anthropic 표준 Skill 포맷**으로 스킬을 추가합니다:
 
 ```
-JNU-Upstage-Skillthon/        ← 내 fork
+JNU-Upstage-Skillthon/
 └── skills/
     ├── [내-스킬-이름]/
     │   ├── SKILL.md              # 필수: name·description + 스킬 지침
@@ -161,23 +160,6 @@ description: 이 스킬이 하는 일과 언제 사용해야 하는지. (WHAT + 
 - [ ] Claude Code에서 스킬이 정상 동작함
 - [ ] `.env` 파일이 커밋되지 않음 (API 키 노출 방지)
 
-[Google Form 링크]에서 팀 정보와 GitHub repo URL 제출
-
----
-
-## 평가 기준
-
-| 항목 | 배점 | 평가 포인트 |
-|------|:----:|-------------|
-| 창의성 | 30 | Upstage API 활용 독창성, 문제 해결 참신성 |
-| 구현 완성도 | 25 | 실행 가능, Input/Output 명확, Iteration 기록 |
-| 사용자 편의성 | 20 | README 보고 실행 가능, 문서화 품질 |
-| 주제 적합성 | 15 | 라이프스타일 문제 연계, Agent Module 적합성 |
-| 작품 사용 가능성 | 10 | IITP 본선 확장 시나리오 |
-
-> **README = 개발계획서**입니다. 평가위원은 README로 점수를 매깁니다.
-
----
 
 ## References
 
