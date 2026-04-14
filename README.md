@@ -133,31 +133,33 @@ skill-creator가 순서대로 안내하는 항목:
 
 ## 제출 구성
 
-Fork된 repo 안에 다음 구조가 있어야 합니다:
+Fork된 repo의 `skills/` 아래에 **Anthropic 표준 Skill 포맷**으로 스킬을 추가합니다:
 
 ```
 JNU-Upstage-Skillthon/        ← 내 fork
-├── [내-스킬-이름]/
-│   ├── SKILL.md              # 스킬 명세 (name, description, 트리거 조건)
-│   ├── README.md             # 개발계획서 (평가 기준 6개 섹션)
-│   ├── skill/
-│   │   ├── __init__.py
-│   │   └── main.py           # run(input_data) -> dict
-│   ├── examples/
-│   │   └── example_01.md     # 실제 입출력 예시
-│   ├── docs/
-│   │   └── iteration.md      # 개선 과정 (최소 2회)
-│   └── requirements.txt
-└── skills/                   # 수정 금지
+└── skills/
+    ├── [내-스킬-이름]/
+    │   ├── SKILL.md              # 필수: name·description + 스킬 지침
+    │   ├── scripts/              # 선택: 실행 코드 (Upstage API 호출 등)
+    │   ├── references/           # 선택: 참조 문서
+    │   └── assets/               # 선택: 템플릿·파일 등
+    └── skill-creator/            # 수정 금지
+```
+
+**SKILL.md 필수 frontmatter:**
+
+```yaml
+---
+name: my-skill-name
+description: 이 스킬이 하는 일과 언제 사용해야 하는지. (WHAT + WHEN)
+---
 ```
 
 **제출 전 체크리스트:**
 
-- [ ] `python [내-스킬-이름]/skill/main.py` → 에러 없이 실행됨
-- [ ] README에 실제 실행 결과(출력 로그 또는 스크린샷) 포함
-- [ ] `docs/iteration.md`에 최소 2회 개선 기록
+- [ ] `SKILL.md`에 `name`과 `description`이 작성됨
+- [ ] Claude Code에서 스킬이 정상 동작함
 - [ ] `.env` 파일이 커밋되지 않음 (API 키 노출 방지)
-- [ ] SKILL.md `name`이 디렉토리 이름과 일치
 
 [Google Form 링크]에서 팀 정보와 GitHub repo URL 제출
 
