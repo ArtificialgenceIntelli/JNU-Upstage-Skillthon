@@ -20,7 +20,7 @@
   - [시작하는 방법](#시작하는-방법)
     - [1단계 — Repo Fork](#1단계--repo-fork)
     - [2단계 — Clone \& 열기](#2단계--clone--열기)
-    - [3단계 — skill-creator 설치](#3단계--skill-creator-설치)
+    - [3단계 — solar-skill-creator 설치](#3단계--solar-skill-creator-설치)
     - [4단계 — Skill 만들기](#4단계--skill-만들기)
   - [제출 구성](#제출-구성)
   - [References](#references)
@@ -85,7 +85,7 @@ cd JNU-Upstage-Skillthon
 claude .
 ```
 
-### 3단계 — skill-creator 설치
+### 3단계 — solar-skill-creator 설치
 
 **방법 A — 마켓플레이스로 설치** (권장)
 
@@ -93,27 +93,27 @@ Claude Code 내에서 실행:
 
 ```
 /plugin marketplace add gobeumsu/JNU-Upstage-Skillthon
-/plugin install skill-creator@solar-skill-creator
+/plugin install solar-skill-creator@solar-skill-creator
 ```
 
 **방법 B — 로컬 직접 로드**
 
 ```bash
-claude skills add skills/skill-creator
+claude skills add skills/solar-skill-creator
 ```
 
-> 설치 확인: Claude Code 내에서 `/skills` 실행 → `skill-creator` 목록에 표시
+> 설치 확인: Claude Code 내에서 `/skills` 실행 → `solar-skill-creator` 목록에 표시
 
 ### 4단계 — Skill 만들기
 
 Claude Code 프롬프트에 아래와 같이 입력하세요.  
-**Upstage API 키 설정 등 모든 초기 설정을 skill-creator가 안내합니다.**
+**Upstage API 키 설정 등 모든 초기 설정을 solar-skill-creator가 안내합니다.**
 
 ```
 > 내 주변의 버터떡을 파는 곳을 가져오는 스킬을 만들고 싶어요
 ```
 
-skill-creator가 순서대로 안내하는 항목:
+solar-skill-creator가 순서대로 안내하는 항목:
 1. Upstage API 키 입력 및 `.env` 설정
 2. 만들 스킬 아이디어 인터뷰
 3. 스킬 코드 생성 및 테스트
@@ -135,7 +135,7 @@ JNU-Upstage-Skillthon/
     │   ├── scripts/              # 선택: 실행 코드 (Upstage API 호출 등)
     │   ├── references/           # 선택: 참조 문서
     │   └── assets/               # 선택: 템플릿·파일 등
-    └── skill-creator/            # 수정 금지
+    └── solar-skill-creator/      # 수정 금지
 ```
 
 **SKILL.md 필수 frontmatter:**

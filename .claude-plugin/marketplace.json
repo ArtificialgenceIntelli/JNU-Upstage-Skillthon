@@ -10,8 +10,8 @@
   },
   "plugins": [
     {
-      "name": "skill-creator",
-      "source": "./skills/skill-creator",
+      "name": "solar-skill-creator",
+      "source": "./skills/solar-skill-creator",
       "description": "Create new skills, modify and improve existing skills powered by Upstage Solar API. Use when building AI Agent skills for JNU × Upstage Skillthon.",
       "version": "1.0.0",
       "author": {
