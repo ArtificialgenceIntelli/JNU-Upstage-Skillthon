@@ -87,8 +87,6 @@ claude .
 
 ### 3단계 — solar-skill-creator 설치
 
-**방법 A — 마켓플레이스로 설치** (권장)
-
 Claude Code 내에서 실행:
 
 ```
@@ -96,13 +94,7 @@ Claude Code 내에서 실행:
 /plugin install solar-skill-creator@solar-skill-creator
 ```
 
-**방법 B — 로컬 직접 로드**
-
-```bash
-claude skills add skills/solar-skill-creator
-```
-
-> 설치 확인: Claude Code 내에서 `/skills` 실행 → `solar-skill-creator` 목록에 표시
+> 설치 확인: Claude Code 내에서 `/plugin list` 또는 `/skills` 실행 → `solar-skill-creator` 목록에 표시
 
 ### 4단계 — Skill 만들기
 

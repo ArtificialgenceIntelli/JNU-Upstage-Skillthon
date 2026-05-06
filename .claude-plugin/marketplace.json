@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Skills for Your Daily Life — Upstage Solar API 기반 AI Agent Skill 제작 도구 (JNU Skillthon)",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "solar-skill-creator",
-      "source": "./skills/solar-skill-creator",
+      "source": "./",
       "description": "Create new skills, modify and improve existing skills powered by Upstage Solar API. Use when building AI Agent skills for JNU × Upstage Skillthon.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Anthropic (adapted for JNU Skillthon)",
         "email": "gobeumsu@gmail.com"
